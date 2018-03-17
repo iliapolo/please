@@ -1,9 +1,14 @@
 #!/usr/bin/env bash
 
-# This script will create the dev directories
+# This script will create the dev directories if needed
 
-whoami=$(whoami)
+echo "Creating src directory: ${HOME}/dev/src"
+mkdir -p ${HOME}/dev/src
 
-mkdir -p /Users/${whoami}/dev/src/iliapolo
-mkdir -p /Users/${whoami}/dev/tools
-mkdir -p /Users/${whoami}/dev/runtime
+echo "Creating tools directory: ${HOME}/dev/tools"
+mkdir -p ${HOME}/dev/tools
+
+echo "Creating runtime directory: ${HOME}/dev/runtime"
+mkdir -p ${HOME}/dev/runtime
+
+echo "Done!"
