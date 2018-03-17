@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # This script will install and configure zsh along side prezto configuration framework
 
 prezto_url=git@github.com:iliapolo/prezto.git
