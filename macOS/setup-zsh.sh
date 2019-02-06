@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/local/bin/zsh
 
 ####################################################################################################
 #
@@ -26,13 +26,13 @@ if [ ! "${git_installed}" -eq 0 ]; then
 fi
 
 echo "Cloning prezto from ${prezto_url} to ${src_dir}/prezto"
-git clone --recursive ${prezto_url} ${src_dir}/prezto
+#git clone --recursive ${prezto_url} ${src_dir}/prezto
 
 echo "Creating symbolic links"
-ln -s ${HOME}/dev/src/iliapolo/prezto ${HOME}/.zprezto
+#ln -s ${HOME}/dev/src/iliapolo/prezto ${HOME}/.zprezto
 setopt EXTENDED_GLOB
-for rcfile in "${$HOME}"/.zprezto/runcoms/^README.md(.N); do
-  ln -s "$rcfile" "${$HOME}/.${rcfile:t}"
+for rcfile in $HOME/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "$HOME/.${rcfile:t}"
 done
 
 echo "Done, open a new terminal window to see the affects"
