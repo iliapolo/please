@@ -14,39 +14,18 @@ Development environment setup
 
     - uncheck unnecessary stuff from the search options
 
-4. Install Xcode
-
-    - xcode-select --install
-
-5. Install Homebrew
-    
-    - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-6. Install zsh
-
-    - brew install zsh
-    
-7. Install Cask
-
-    - brew tap caskroom/cask
-    
-8. Install spectacle
-
-    - brew cask install spectacle (open spectacle and follow instructions + launch on boot)
-
 9. Install CopyClip
 
     - Manual https://itunes.apple.com/us/app/copyclip-clipboard-history/id595191960?mt=12 
     (configure launch on boot in preferences)
     
-10. Install iTerm2
+11. Setup ssh key on github
 
-    - brew cask install iterm2
+12. install git and clone dev-environment
+
+13. run setup-zsh.sh (make sure it installs powerline fonts and change font in iterm2 to Robot 
+Mono Medium for Powerline 4pt)
     
-5. Install IntelliJ
+14. Install IntelliJ
 
-6. Install iTerm    
-    
-7. Install zsh with prezto
-
- 
+16. change iterm2 default profile command to zsh

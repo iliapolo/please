@@ -1,9 +1,7 @@
 #!/usr/local/bin/zsh
 
 ####################################################################################################
-#
 # This script will install and configure zsh along side prezto configuration framework
-#
 #
 ####################################################################################################
 
@@ -11,6 +9,7 @@
 prezto_url=git@github.com:iliapolo/prezto.git
 src_dir=${HOME}/dev/src/iliapolo
 
+brew install zsh
 
 # check the necessary directory exists
 if [ ! -d "${src_dir}" ]; then
@@ -36,3 +35,6 @@ for rcfile in $HOME/.zprezto/runcoms/^README.md(.N); do
 done
 
 echo "Done, open a new terminal window to see the affects"
+
+
+TODO install powerline fonts
