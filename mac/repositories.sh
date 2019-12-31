@@ -3,18 +3,21 @@
 function clone {
 
     repo=$1
-    repo_dir=${HOME}/dev/src/iliapolo/${repo}
+    repo_dir=${HOME}/dev/src/github.com/iliapolo/${repo}
 
     if [ -d "${repo_dir}" ]; then
         echo "Repository ${repo} already exists - OK"
     else
         echo "Cloning ${repo}..."
         git clone git@github.com:iliapolo/${repo}.git ${repo_dir}
+        cd ${repo_dir}
+        git config user.name iliapolo
+        git config user.email eli.polonsky@gmail.com
     fi
 
 }
 
-clone pyci.git
+clone pyci
 
 clone pyci-guinea-pig
 

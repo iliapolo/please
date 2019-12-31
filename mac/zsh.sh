@@ -1,4 +1,6 @@
-#!/usr/local/bin/zsh
+#!/bin/zsh
+
+set -e
 
 ####################################################################################################
 # This script will install and configure zsh along side prezto configuration framework
@@ -7,9 +9,7 @@
 
 
 prezto_url=git@github.com:iliapolo/prezto.git
-src_dir=${HOME}/dev/src/iliapolo
-
-brew install zsh
+src_dir=${HOME}/dev/src/github.com/iliapolo
 
 # check the necessary directory exists
 if [ ! -d "${src_dir}" ]; then
@@ -19,16 +19,18 @@ fi
 
 # check we have git installed
 git_installed=$(which git)
-if [ ! "${git_installed}" -eq 0 ]; then
+if [ ! -f $(which git) ]; then
   echo "git is not installed, please install it manually or by running 'setup-git.sh' and try again"
   exit 1
 fi
 
-echo "Cloning prezto from ${prezto_url} to ${src_dir}/prezto"
-#git clone --recursive ${prezto_url} ${src_dir}/prezto
+if [ ! -d ${src_dir}/prezto ]; then
+  echo "Cloning prezto from ${prezto_url} to ${src_dir}/prezto"
+  git clone --recursive ${prezto_url} ${src_dir}/prezto
+fi
 
 echo "Creating symbolic links"
-#ln -s ${HOME}/dev/src/iliapolo/prezto ${HOME}/.zprezto
+ln -s ${HOME}/dev/src/github.com/iliapolo/prezto ${HOME}/.zprezto
 setopt EXTENDED_GLOB
 for rcfile in $HOME/.zprezto/runcoms/^README.md(.N); do
   ln -s "$rcfile" "$HOME/.${rcfile:t}"
@@ -37,4 +39,11 @@ done
 echo "Done, open a new terminal window to see the affects"
 
 
-TODO install powerline fonts
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts

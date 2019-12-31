@@ -8,28 +8,32 @@
 function create_virtualenv {
 
     project=$1
-    project_dir=${HOME}/dev/src/iliapolo/${project}
+    project_dir=${HOME}/dev/src/github.com/iliapolo/${project}
+    virtualenv_name=${project}@iliapolo@github.com
+    virtualenv_dir=${HOME}/dev/virtualenvs/${virtualenv_name}
 
-    if [ -d "${project_dir}" ]; then
-        echo "Project ${project} already exists - OK"
+    if [ -d "${virtualenv_dir}" ]; then
+        echo "Virtualenv ${virtualenv_name} already exists: OK"
     else
         echo "Creating virtualenv ${project}..."
-        mkvirtualenv -a ${project_dir} -p python3 ${project}
+        mkvirtualenv -a ${project_dir} -p python3 ${virtualenv_name}
     fi
 
 
 }
 
-echo "Installing Python3.7 with brew..."
-brew install python
+echo "Installing pyenv..."
+brew install pyenv
 
-echo "Installing pip..."
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python get-pip.py
-rm -rf get-pip.py
+echo "Installing python 3.6.5"
+pyenv install 3.6.5
+pyenv global 3.6.5
 
-echo "Installing virtualenvwrapper..."
-pip install virtualenvwrapper
+echo "Installing penv-virtualenv..."
+brew install pyenv-virtualenv
+
+echo "Installing penv-virtualenvwrapper..."
+brew install pyenv-virtualenvwrapper
 
 create_virtualenv pyci
 

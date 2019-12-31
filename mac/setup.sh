@@ -17,3 +17,6 @@ ${script_dir}/setup-python.sh
 ${script_dir}/setup-zsh.sh
 
 ${script_dir}/setup-apps.sh
+
+
+brew cask install visual-studio-code
