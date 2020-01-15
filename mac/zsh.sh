@@ -47,3 +47,5 @@ cd fonts
 # clean-up a bit
 cd ..
 rm -rf fonts
+
+# enable powerline on vscode: "terminal.integrated.fontFamily": "Source Code Pro for Powerline"
