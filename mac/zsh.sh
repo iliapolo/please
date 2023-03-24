@@ -49,3 +49,4 @@ cd ..
 rm -rf fonts
 
 # enable powerline on vscode: "terminal.integrated.fontFamily": "Source Code Pro for Powerline"
+# follow https://apple.stackexchange.com/questions/368603/how-to-make-powerline-fonts-work-with-iterm2
