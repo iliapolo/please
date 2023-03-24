@@ -1,6 +1,6 @@
 from setuptools import setup
 
-BASE_PACKAGE_NAME = 'devbox'
+BASE_PACKAGE_NAME = 'please'
 
 setup(
   name=BASE_PACKAGE_NAME,
@@ -8,7 +8,6 @@ setup(
   packages=[
     BASE_PACKAGE_NAME,
     '{0}.shell'.format(BASE_PACKAGE_NAME),
-    '{0}.api'.format(BASE_PACKAGE_NAME),
   ],
   entry_points={
     'console_scripts': [
@@ -17,5 +16,6 @@ setup(
   },
   install_requires=[
     'click==8.1.3',
+    'boto3==1.26.98'
   ],
 )

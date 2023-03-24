@@ -1,10 +1,115 @@
+# Please
 
+Asking my box to perform various tasks
 
+## Day 1
 
+### 0) iTerm2
 
+Either from https://iterm2.com/downloads.html or from corporate repository.
 
+### 1) GitHub SSH Key
 
-# dev-environment
+https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+### 2) Brew
+
+https://github.com/Homebrew/install
+
+### 3) Pyenv
+
+https://github.com/pyenv/pyenv#homebrew-in-macos
+
+### 4) Python
+
+Install a Python version to serve as the global runtime. Make sure to use 
+the latest one.
+
+```console
+eval "$(pyenv init -)"
+```
+
+```console
+pyenv install 3.10.4
+```
+
+```console
+pyenv global 3.10.4
+```
+
+### 5) Virtualenvwrapper
+
+```console
+pip install virtualenvwrapper
+```
+
+### PyCharm
+
+https://www.jetbrains.com/pycharm/download/#section=mac
+
+### VSCode
+
+https://code.visualstudio.com/download
+
+### 6) Prezto
+
+```console
+mkdir -p ~/dev/src/github.com/iliapolo
+```
+
+```console
+cd ~/dev/src/github.com/iliapolo
+```
+
+```console
+git clone --branch iliapolo --recursive git@github.com:iliapolo/prezto.git
+```
+
+```console
+mkdir -p ~/dev/src/github.com/powerline
+```
+
+```console
+cd ~/dev/src/github.com/powerline
+```
+
+```console
+git clone https://github.com/powerline/fonts.git --depth=1
+```
+
+```console
+cd fonts && ./install.sh
+```
+
+- **Enable powerline fonts in iTerm2:** https://apple.stackexchange.com/questions/368603/how-to-make-powerline-fonts-work-with-iterm2
+- **Enable powerline fonts in VSCode:** https://code.visualstudio.com/docs/terminal/appearance#_powerline-symbols-and-nerd-fonts
+  - *Source Code Pro for Powerline*
+
+### 7) Please
+
+```console
+cd ~/dev/src/github.com/iliapolo
+```
+
+```console
+git clone git@github.com:iliapolo/please.git
+```
+
+```console
+cd please && pip install -e .
+```
+ 
+```console
+please setup
+```
+
+## Day 2
+
+```console
+please --help
+```
+
+You got a new comp!
 Development environment setup
 
 - setup ssh key for github
