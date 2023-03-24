@@ -7,6 +7,13 @@
 # dev-environment
 Development environment setup
 
+- setup ssh key for github
+- install prezto
+- Install pyenv
+- Install latest python version
+- clone and install devbox
+
+
 
 1. Software Updates
 
