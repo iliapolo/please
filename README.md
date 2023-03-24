@@ -12,6 +12,7 @@ Development environment setup
 - Install pyenv
 - Install latest python version
 - clone and install devbox
+- Install PyCharm and configure default terminal command
 
 
 
