@@ -1,0 +1,20 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+    "terminal.integrated.scrollback": 1000000,
+    "editor.renderWhitespace": "all",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.tslint": true,
+        "source.fixAll.eslint": true
+    },    
+    "search.exclude": {
+        "**/node_modules": false
+    },
+    "files.exclude": {
+        "**/node_modules/": true,
+    },
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 5000
+}
