@@ -119,6 +119,8 @@ https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable
 
 https://github.com/runfinch/finch
 
+> Install via Homebrew. Tarball installation failed to initialize VM for some reason.
+
 ## Day 2
 
 ```console
