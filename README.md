@@ -45,11 +45,13 @@ pip install virtualenvwrapper
 
 ### PyCharm
 
-https://www.jetbrains.com/pycharm/download/#section=mac
+- **Install:** https://www.jetbrains.com/pycharm/download/#section=mac
+- **Disable Telemetry:** https://www.jetbrains.com/help/pycharm/settings-usage-statistics.html
 
 ### VSCode
 
-https://code.visualstudio.com/download
+- **Install:** https://code.visualstudio.com/download
+- **Disable Telemetry:** https://code.visualstudio.com/docs/getstarted/telemetry#_disable-telemetry-reporting
 
 ### 6) Prezto
 
