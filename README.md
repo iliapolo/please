@@ -40,7 +40,7 @@ pyenv global 3.10.4
 ### 5) Virtualenvwrapper
 
 ```console
-pip install virtualenvwrapper
+brew install pyenv-virtualenvwrapper
 ```
 
 ### PyCharm
