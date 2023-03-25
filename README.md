@@ -105,6 +105,14 @@ cd please && pip install -e .
 please setup
 ```
 
+```console
+cd ~/Library/Application Support/Code/User
+```
+
+```console
+ln -s ~/dev/src/github.com/iliapolo/please/settings.json settings.json
+```
+
 ### 8) Node
 
 ```console
