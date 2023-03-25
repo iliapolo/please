@@ -115,6 +115,10 @@ brew install node@18
 
 https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable
 
+### 10) Finch
+
+https://github.com/runfinch/finch
+
 ## Day 2
 
 ```console
