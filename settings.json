@@ -1,5 +1,6 @@
 {
     "workbench.colorTheme": "Default Dark+",
+    "workbench.settings.editor": "json",
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.defaultProfile.osx": "zsh",
     "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
@@ -16,5 +17,6 @@
         "**/node_modules/": true,
     },
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 5000
+    "files.autoSaveDelay": 5000,
+    "explorer.confirmDelete": false
 }
