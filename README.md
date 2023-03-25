@@ -105,6 +105,16 @@ cd please && pip install -e .
 please setup
 ```
 
+### 8) Node
+
+```console
+brew install node@18
+```
+
+### 9) Yarn
+
+https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable
+
 ## Day 2
 
 ```console
