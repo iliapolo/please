@@ -121,6 +121,10 @@ https://github.com/runfinch/finch
 
 > Install via Homebrew. Tarball installation failed to initialize VM for some reason.
 
+### 11) Golang
+
+https://go.dev/doc/install
+
 ## Day 2
 
 ```console
