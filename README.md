@@ -43,6 +43,8 @@ pyenv global 3.10.4
 brew install pyenv-virtualenvwrapper
 ```
 
+Then this: https://github.com/pyenv/pyenv-virtualenvwrapper?tab=readme-ov-file#using-pyvenv-instead-of-virtualenv
+
 ### PyCharm
 
 - **Install:** https://www.jetbrains.com/pycharm/download/#section=mac
