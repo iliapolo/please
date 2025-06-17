@@ -14,7 +14,7 @@ https://sourabhbajaj.com/mac-setup/
 
     - uncheck unnecessary stuff from the search options
 
-4. Install Spectacle: https://www.spectacleapp.com/
+4. Install Rectangle: https://github.com/rxhanson/Rectangle
 
 5. Install iTerm: https://iterm2.com/
 
